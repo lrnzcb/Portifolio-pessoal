@@ -288,13 +288,6 @@ header nav {
   border-radius: 3px;
 }
 
-.progress .per {
-  width: 50%;
-  height: 100%;
-  background: #8a3dff;
-  border-radius: 3px;
-}
-
 .progress .per5 {
   width: 85%;
   height: 100%;
