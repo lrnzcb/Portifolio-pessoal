@@ -110,3 +110,10 @@ header {
         border-radius: 3px;
     }
 }
+
+.grid_project {   display: flex; flex-direction: column;}
+.card_project { display: flex; flex-direction: column; align-items: center; padding: 5px 0px; margin-bottom: 20px; & img{ width: 96%; border-radius: 7px;}}
+.footer_project { width: 98%; padding: 0; margin-bottom: 18px; display: flex;}
+.text_card_project { line-height: 0.2; margin: 0 10px; width: 88%;}
+.footer_project span{ background: $texto-desable; font-size: 10px; margin-right: 8px; padding: 5px 8px;  border-radius: 3px;}
+.btn_card_project  { margin-top: 20px; display: flex; justify-content: center; align-items: center;  & a {background:$cor-primaria; color: $texto-principal; padding: 7px 8px;}}
