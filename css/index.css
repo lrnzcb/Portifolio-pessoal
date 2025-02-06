@@ -50,7 +50,6 @@ body {
 
 h2 {
   font-size: 20px;
-  border-bottom: solid 2px #8a3dff;
 }
 
 h3 {
@@ -394,6 +393,7 @@ header nav {
 }
 
 footer {
+  margin-top: 10px;
   border-top: solid 1px #808080;
 }
 

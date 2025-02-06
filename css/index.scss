@@ -6,7 +6,7 @@
 @import 'card.scss';
 
 body{text-decoration: none; list-style: none;  font-family: $font-principal; font-size: $tamanho-font-base; line-height: $espacamento-base; color: $texto-principal; background: $background; margin:0; padding: 0; box-sizing: border-box; min-height: 100vh;}
-h2{ font-size: $tamanho-font-subtitulo; border-bottom: solid 2px $cor-primaria}
+h2{ font-size: $tamanho-font-subtitulo;}
 
 h3{ font-size: $tamanho-font-subtitulo;}
 p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
@@ -115,4 +115,4 @@ header {
 .text_card_project a {background:$cor-primaria; color: $texto-principal; padding: 7px 8px; margin-left: 5px; }
 .contact a{ padding: 8px; background: $cor-primaria; color: $texto-principal; font-size: $tamanho-font-base; text-decoration: none; border-radius: 5px; text-align: center;}
 .contact small{ margin-top: 10px; color :$texto-secundario; font-size: small;}
-footer { border-top: solid 1px $texto-desable; & small{ color: $texto-desable; margin-top: 10px; font-size: 10px;}}
+footer { margin-top: 10px; border-top: solid 1px $texto-desable; & small{ color: $texto-desable; margin-top: 10px; font-size: 10px;}}
