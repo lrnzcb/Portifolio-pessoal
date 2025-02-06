@@ -369,22 +369,10 @@ header nav {
   border-radius: 3px;
 }
 
-.btn_card_project {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.btn_card_project a {
+.text_card_project a {
   background: #8a3dff;
   color: #f5f5f5;
   padding: 7px 8px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -116,4 +116,4 @@ header {
 .footer_project { width: 98%; padding: 0; margin-bottom: 18px; display: flex;}
 .text_card_project { line-height: 0.2; margin: 0 10px; width: 88%;}
 .footer_project span{ background: $texto-desable; font-size: 10px; margin-right: 8px; padding: 5px 8px;  border-radius: 3px;}
-.btn_card_project  { margin-top: 20px; display: flex; justify-content: center; align-items: center;  & a {background:$cor-primaria; color: $texto-principal; padding: 7px 8px;}}
+.text_card_project a {background:$cor-primaria; color: $texto-principal; padding: 7px 8px; margin-left: 5px; }
