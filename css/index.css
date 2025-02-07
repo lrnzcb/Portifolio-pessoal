@@ -130,7 +130,7 @@ header .header {
 
 header .header .logo span {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 header nav {
@@ -147,6 +147,7 @@ header nav {
   background: none;
   border: none;
   border-radius: 3px;
+  font-size: 16px;
   color: var(--texto-principal);
   padding: 3px 5px;
   cursor: pointer;

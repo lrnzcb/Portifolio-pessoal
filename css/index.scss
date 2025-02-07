@@ -25,12 +25,13 @@ p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
 .grid{display: flex; flex-direction: column; margin: 15px; }
 // mobille
 header {
-     padding: $espaco-pequeno;
-    & .header{
+     padding: $espaco-pequeno;  
+        & .header{
         justify-content: space-between;
         background:var(--fundo-component);
         padding: $espaco-pequeno;
          border-radius:$espaco-pequeno;
+        
           display: flex;
         & .logo span{
              font-size: $tamanho-font-base;
@@ -42,6 +43,7 @@ header {
          & button{ background: none;
              border:none;
              border-radius: 3px;
+             font-size: $tamanho-font-base;
              color: var(--texto-principal);
              padding: 3px 5px;
              cursor: pointer; }}
