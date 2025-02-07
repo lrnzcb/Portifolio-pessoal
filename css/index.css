@@ -169,6 +169,7 @@ p {
 header {
   padding: 8px;
   position: fixed;
+  z-index: 44444;
   width: 100%;
 }
 

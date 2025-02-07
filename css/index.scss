@@ -34,6 +34,7 @@ p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
 header {
      padding: $espaco-pequeno; 
      position: fixed; 
+     z-index: 44444;
      width: 100%;
         & .header{
         justify-content: space-between;
