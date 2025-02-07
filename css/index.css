@@ -91,6 +91,10 @@ a {
   padding: 8px;
 }
 
+.xe {
+  height: 70px;
+}
+
 body {
   text-decoration: none;
   list-style: none;
@@ -164,6 +168,8 @@ p {
 
 header {
   padding: 8px;
+  position: fixed;
+  width: 100%;
 }
 
 header .header {
@@ -566,7 +572,7 @@ footer small {
 }
 
 .card_depoiment {
-  padding: 5px;
+  padding: 10px;
   color: var(--texto-secundario);
 }
 
@@ -610,7 +616,8 @@ form .ap {
 
 form input {
   background: var(--fundo-component);
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
   width: 95%;
   padding: 8px;
@@ -633,12 +640,25 @@ form textarea {
 
 form button {
   background: var(--cor-primaria);
+  cursor: pointer;
   border: none;
   color: var(--texto-principal);
   font-size: 14px;
   padding: 8px 25px;
   border-radius: 5px;
   margin-top: 5px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 600px) {
@@ -716,6 +736,21 @@ form button {
         -ms-flex-align: center;
             align-items: center;
   }
+  .card_depoiment {
+    width: 43%;
+  }
+  .grid_depoiment {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 900px) {
@@ -751,18 +786,22 @@ form button {
     width: 20%;
     margin: 8px 0;
   }
-}
-
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  .contact_l {
+    width: 50%;
+    padding: 20px;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -4,7 +4,7 @@
 @import 'btn.scss';
 @import 'icon.scss';
 @import 'card.scss';
-
+.xe{height: 70px;}
 body{text-decoration: none; 
     list-style: none; 
      font-family: $font-principal;
@@ -32,7 +32,9 @@ p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
     width: 100%; }
 // mobille
 header {
-     padding: $espaco-pequeno;  
+     padding: $espaco-pequeno; 
+     position: fixed; 
+     width: 100%;
         & .header{
         justify-content: space-between;
         background:var(--fundo-component);
@@ -71,6 +73,7 @@ header {
     border-radius: 50%; 
     border: solid 3px var(--cor-primaria);}
  .above {width: 98%;
+   
      background: var(--fundo-component);
      border-radius: 10px; 
      margin: 10px ; 
@@ -234,8 +237,8 @@ footer { margin-top: 10px;
      & small{ color: var(--texto-desable);
          margin-top: 10px; 
          font-size: 10px;}}
-.grid_depoiment{display: flex; flex-direction: column; gap: 20px;}
-         .card_depoiment{ padding: 5px; color: var(--texto-secundario); & img{ width: 70px;  height: 70px;object-fit: cover; border-radius:8px;}}
+.grid_depoiment{display: flex; flex-direction: column; gap: 20px; }
+         .card_depoiment{ padding: 10px; color: var(--texto-secundario); & img{ width: 70px;  height: 70px;object-fit: cover; border-radius:8px;}}
          .profile{ display: flex; gap: 8px; & span{ color: var(--texto-principal);}}
 
 
@@ -246,7 +249,8 @@ footer { margin-top: 10px;
            & .ap{width: 100%; margin-top: 15px;}
         & input{
 background: var(--fundo-component);
-margin-top: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
 border: none;
 width: 95%;
 padding: 8px;
@@ -271,12 +275,16 @@ padding: 8px ;
     }
 
     form button{ background: var(--cor-primaria);
+        cursor: pointer;
     border: none; 
 color: var(--texto-principal);
  font-size: 14px;
 padding: 8px 25px; 
 border-radius: 5px;
 margin-top: 5px;}
+
+.form{  display: flex; justify-content: center; align-items: center;}
+
 //tablet
 @media (min-width: 600px) {
     body{
@@ -311,12 +319,16 @@ i{ font-size: 22px;}
     
          .contact a{width: 300px;}
          .contact {display: flex; align-items: center;}
+
+         .card_depoiment{width: 43%;}
+         .grid_depoiment{width: 95%; display: flex; flex-direction: row; flex-wrap: wrap;}
         }
 //pc
 
 @media (min-width: 900px) {
     body{
         font-size:18px;
+        
        }
        .grid{width: 80%; }
        h1{font-size: 36px;}
@@ -331,8 +343,11 @@ a{  font-size: 14px ;}
     width: 20%;
      margin: 8px 0; }
 
+     .contact_l{width: 50%; padding: 20px;}
+     .contact { display: flex; flex-direction: row;}
+     .form{ width: 50%;}
+
 }
-.form{  display: flex; justify-content: center; align-items: center;}
 
 //telas maiores
 @media (min-width: 1200px) {
