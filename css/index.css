@@ -176,7 +176,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 98%;
 }
 
 header .header {
@@ -186,7 +186,7 @@ header .header {
   background: var(--fundo-component);
   padding: 8px;
   border-radius: 8px;
-  width: 96%;
+  width: 94%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
