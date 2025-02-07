@@ -28,7 +28,8 @@ a{  color: var(--texto-principal); font-size: 12px ;}
 p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
 .grid{display: flex;
      flex-direction: column; 
-     margin: 15px; }
+     margin: 15px; 
+    width: 100%; }
 // mobille
 header {
      padding: $espaco-pequeno;  
@@ -102,7 +103,8 @@ header {
     
 }
 
-.skill_grid{display: flex;
+.skill_grid{display: flex; 
+    width: 100%;
      flex-direction: column;;}
 .img_profile_about {width: 100%;
      height: 350px;
@@ -112,7 +114,6 @@ header {
       border-radius: 8px;}}
 
 .skill_card{ display: flex;
-     height: 50px;
       margin: 8px 0; }
 .icon_skill{ display: flex;
      justify-content: center;
@@ -224,6 +225,7 @@ header {
      color :var(--texto-secundario);
       font-size: small;}
 footer { margin-top: 10px; 
+    display: flex; justify-content: center; align-items: center;
     border-top: solid 1px var(--texto-desable);
      & small{ color: var(--texto-desable);
          margin-top: 10px; 
@@ -262,7 +264,8 @@ i{ font-size: 22px;}
          margin: 8px 0; }
     
          .contact a{width: 300px;}
-         .contact {display: flex; align-items: center;}}
+         .contact {display: flex; align-items: center;}
+        }
 //pc
 
 @media (min-width: 900px) {
