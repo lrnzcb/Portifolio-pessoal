@@ -299,7 +299,7 @@ header nav :hover {
 
 .social_midea li a {
   color: var(--texto-principal);
-  margin-right: 8px;
+  margin-right: 15px;
   font-size: 16px;
 }
 
@@ -309,6 +309,19 @@ header nav :hover {
   transition: all 0.5s;
   -webkit-transform: translateY(-3px) scale(1.05) rotate(2deg);
           transform: translateY(-3px) scale(1.05) rotate(2deg);
+}
+
+.expr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  line-height: 0.2;
+  margin-left: 5px;
+}
+
+.expr span {
+  color: var(--cor-primaria);
 }
 
 .skill_grid {
@@ -472,6 +485,11 @@ header nav :hover {
   border-radius: 7px;
 }
 
+.card_project video {
+  width: 96%;
+  border-radius: 7px;
+}
+
 .footer_project {
   width: 98%;
   padding: 0;
@@ -505,11 +523,8 @@ header nav :hover {
 }
 
 .contact a {
-  padding: 8px;
-  background: var(--cor-primaria);
   color: var(--texto-principal);
   text-decoration: none;
-  border-radius: 5px;
   text-align: center;
 }
 
@@ -537,6 +552,93 @@ footer small {
   color: var(--texto-desable);
   margin-top: 10px;
   font-size: 10px;
+}
+
+.grid_depoiment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.card_depoiment {
+  padding: 5px;
+  color: var(--texto-secundario);
+}
+
+.card_depoiment img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.profile span {
+  color: var(--texto-principal);
+}
+
+form {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+
+form .ip {
+  width: 50%;
+}
+
+form .ap {
+  width: 100%;
+  margin-top: 15px;
+}
+
+form input {
+  background: var(--fundo-component);
+  margin-top: 5px;
+  border: none;
+  width: 90%;
+  padding: 8px;
+  font-family: "Poppins", serif;
+  border-radius: 5px;
+  color: var(--texto-desable);
+}
+
+form textarea {
+  width: 95%;
+  margin-top: 5px;
+  font-family: "Poppins", serif;
+  color: var(--texto-desable);
+  padding: 8px;
+  height: 100px;
+  background: var(--fundo-component);
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background: var(--cor-primaria);
+  border: none;
+  color: var(--texto-principal);
+  font-size: 14px;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 @media (min-width: 600px) {
@@ -641,6 +743,26 @@ footer small {
   a {
     font-size: 14px;
   }
+  .skill_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 20%;
+    margin: 8px 0;
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1200px) {
