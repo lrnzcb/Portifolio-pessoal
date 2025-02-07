@@ -8,7 +8,7 @@
 body{text-decoration: none; 
     list-style: none; 
      font-family: $font-principal;
-     font-size: $tamanho-font-base;
+     font-size: 14px;
      line-height: $espacamento-base; 
      background: var(--background);
      color: var(--texto-principal);
@@ -18,11 +18,17 @@ body{text-decoration: none;
      min-height: 100vh;
      transition: all 0.5s;
     }
-h2{ font-size: $tamanho-font-subtitulo;}
-
-h3{ font-size: $tamanho-font-subtitulo;}
+    section{display: flex; justify-content: center;}
+h1{font-size: 24px;}
+i{ font-size: 20px;}
+h2{ font-size:20px ;}
+h3{ font-size:18px ;}
+small{ font-size: 12px;}
+a{  color: var(--texto-principal); font-size: 12px ;}
 p{ text-align: justify; word-spacing: 1px; hyphens: auto; }
-.grid{display: flex; flex-direction: column; margin: 15px; }
+.grid{display: flex;
+     flex-direction: column; 
+     margin: 15px; }
 // mobille
 header {
      padding: $espaco-pequeno;  
@@ -34,16 +40,25 @@ header {
         
           display: flex;
         & .logo span{
-             font-size: $tamanho-font-base;
              font-weight: $peso-font-regular;}
      }
-     & nav{ display: none;}
+     & nav{ display: none;
+    & ul{ display: flex;
+         gap: 12px;
+           list-style: none; 
+           padding: 0;
+           margin: 0;
+        }
+    & li a{ text-decoration: none;
+         padding: 0;
+         transition: all 0.5s;
+         }
+        & :hover{color: var(--texto-secundario); } }
     }
     .mood { display: flex;
          & button{ background: none;
              border:none;
              border-radius: 3px;
-             font-size: $tamanho-font-base;
              color: var(--texto-principal);
              padding: 3px 5px;
              cursor: pointer; }}
@@ -54,26 +69,26 @@ header {
      width: 150px;
     border-radius: 50%; 
     border: solid 3px var(--cor-primaria);}
- .above { background: var(--fundo-component);
+ .above {width: 98%;
+     background: var(--fundo-component);
      border-radius: 10px; 
      margin: 10px ; 
      display: flex;
       flex-direction: column; 
       justify-content: center;
-       align-items: center;
+       align-items: center; 
         padding: $espaco-medio;
        & .text_above { display: flex;
          flex-direction: column;
     
         & .text_h1 {  line-height:0.3 ;
-        & span { font-size: $tamanho-font-base;}
         & h1 {font-weight:  $peso-font-bold; 
-            font-size: $tamanho-font-titulo;}
+           }
         & h2 {font-weight:  $peso-font-bold;
-             font-size: $tamanho-font-subtitulo;}}}} 
-.call_to_action a{ margin-right: 6px;}
+            }}}} 
+.call_to_action a{ margin-right: 6px;  margin-top: 5px; margin-bottom:15px;}
 
-.social_midea {margin-top: 10px;
+.social_midea {margin-top: 20px;
     & ul { display: flex;
           list-style: none; 
            margin: 0;
@@ -181,10 +196,12 @@ header {
 .footer_project { width: 98%;
      padding: 0; 
      margin-bottom: 18px;
+      
       display: flex;}
 .text_card_project { line-height: 0.2;
      margin: 0 10px;
-      width: 88%;}
+      width: 88%; 
+    }
 .footer_project span{ background:var(--texto-desable);
      font-size: 10px; 
      margin-right: 8px;
@@ -192,13 +209,15 @@ header {
         border-radius: 3px;}
 .text_card_project a {background: var(--cor-primaria); 
     color: var(--texto-principal);
-     padding: 7px 8px;
+    padding: 8px 8px 2px 8px ;
+    position: relative;
+    top: 4px;
+     
       margin-left: 5px; }
 .contact a{ padding: 8px;
      background: var(--cor-primaria);
       color:var(--texto-principal); 
-      font-size: $tamanho-font-base;
-       text-decoration: none;
+            text-decoration: none;
         border-radius: 5px; 
         text-align: center;}
 .contact small{ margin-top: 10px;
@@ -209,3 +228,69 @@ footer { margin-top: 10px;
      & small{ color: var(--texto-desable);
          margin-top: 10px; 
          font-size: 10px;}}
+
+//tablet
+@media (min-width: 600px) {
+    body{
+         font-size:16px;
+      
+        }
+        h1{font-size: 28px;}
+h2{ font-size:24px ;}
+h3{ font-size:22px ;}
+small{ font-size: 14px;}
+i{ font-size: 22px;}
+
+.header nav { display: block; }
+.grid{width: 90%; }
+
+
+.skill_grid{display: flex;
+    flex-wrap: wrap; flex-direction: row; gap:10px}
+
+    .grid_project{display: flex;
+        flex-wrap: wrap; flex-direction: row; gap:10px}
+    
+    
+        .card_project{ display: flex;
+            width: 45%;
+             margin: 8px 0; }
+    
+    .skill_card{ display: flex;
+        height: 50px;
+        width: 45%;
+         margin: 8px 0; }
+    
+         .contact a{width: 300px;}
+         .contact {display: flex; align-items: center;}}
+//pc
+
+@media (min-width: 900px) {
+    body{
+        font-size:18px;
+       }
+       .grid{width: 80%; }
+       h1{font-size: 36px;}
+h2{ font-size:30px ;}
+h3{ font-size:26px ;}
+small{ font-size: 16px;}
+i{ font-size: 24px;}
+
+a{  font-size: 14px ;}
+}
+
+//telas maiores
+@media (min-width: 1200px) {
+    body{
+        font-size:18px;
+     
+       }
+       .grid{width: 70%; }
+       
+a{  font-size: 16px ;}
+       h1{font-size: 36px;}
+h2{ font-size:30px ;}
+h3{ font-size:26px ;}
+small{ font-size: 16px;}
+i{ font-size: 26px;}
+}

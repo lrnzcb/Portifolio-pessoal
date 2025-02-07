@@ -35,8 +35,7 @@ a {
   color: var(--texto-secundario);
 }*/
 .btn, .btn-principal {
-  padding: 5px;
-  font-size: 10px;
+  padding: 5px 10px;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -57,6 +56,30 @@ a {
   background: red;
 }
 
+@media (min-width: 600px) {
+  .btn, .btn-principal {
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 900px) {
+  .btn, .btn-principal {
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn, .btn-principal {
+    padding: 14px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+}
+
 .card {
   background: var(--fundo-component);
   border-radius: 5px;
@@ -72,7 +95,7 @@ body {
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   background: var(--background);
   color: var(--texto-principal);
@@ -85,12 +108,38 @@ body {
   transition: all 0.5s;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+i {
+  font-size: 20px;
+}
+
 h2 {
   font-size: 20px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+small {
+  font-size: 12px;
+}
+
+a {
+  color: var(--texto-principal);
+  font-size: 12px;
 }
 
 p {
@@ -129,12 +178,32 @@ header .header {
 }
 
 header .header .logo span {
-  font-size: 16px;
   font-weight: 400;
 }
 
 header nav {
   display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li a {
+  text-decoration: none;
+  padding: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav :hover {
+  color: var(--texto-secundario);
 }
 
 .mood {
@@ -147,7 +216,6 @@ header nav {
   background: none;
   border: none;
   border-radius: 3px;
-  font-size: 16px;
   color: var(--texto-principal);
   padding: 3px 5px;
   cursor: pointer;
@@ -167,6 +235,7 @@ header nav {
 }
 
 .above {
+  width: 98%;
   background: var(--fundo-component);
   border-radius: 10px;
   margin: 10px;
@@ -200,26 +269,22 @@ header nav {
   line-height: 0.3;
 }
 
-.above .text_above .text_h1 span {
-  font-size: 16px;
-}
-
 .above .text_above .text_h1 h1 {
   font-weight: 700;
-  font-size: 24px;
 }
 
 .above .text_above .text_h1 h2 {
   font-weight: 700;
-  font-size: 20px;
 }
 
 .call_to_action a {
   margin-right: 6px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .social_midea {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social_midea ul {
@@ -432,7 +497,9 @@ header nav {
 .text_card_project a {
   background: var(--cor-primaria);
   color: var(--texto-principal);
-  padding: 7px 8px;
+  padding: 8px 8px 2px 8px;
+  position: relative;
+  top: 4px;
   margin-left: 5px;
 }
 
@@ -440,7 +507,6 @@ header nav {
   padding: 8px;
   background: var(--cor-primaria);
   color: var(--texto-principal);
-  font-size: 16px;
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
@@ -461,5 +527,136 @@ footer small {
   color: var(--texto-desable);
   margin-top: 10px;
   font-size: 10px;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  small {
+    font-size: 14px;
+  }
+  i {
+    font-size: 22px;
+  }
+  .header nav {
+    display: block;
+  }
+  .grid {
+    width: 90%;
+  }
+  .skill_grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  .grid_project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  .card_project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45%;
+    margin: 8px 0;
+  }
+  .skill_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 45%;
+    margin: 8px 0;
+  }
+  .contact a {
+    width: 300px;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  .grid {
+    width: 80%;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  small {
+    font-size: 16px;
+  }
+  i {
+    font-size: 24px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  .grid {
+    width: 70%;
+  }
+  a {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  small {
+    font-size: 16px;
+  }
+  i {
+    font-size: 26px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
