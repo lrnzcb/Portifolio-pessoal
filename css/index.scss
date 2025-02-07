@@ -35,12 +35,15 @@ header {
      padding: $espaco-pequeno; 
      position: fixed; 
      z-index: 44444;
+   display: flex;
+   justify-content: center;
      width: 100%;
         & .header{
         justify-content: space-between;
         background:var(--fundo-component);
         padding: $espaco-pequeno;
          border-radius:$espaco-pequeno;
+         width: 96%;
         
           display: flex;
         & .logo span{

@@ -170,6 +170,12 @@ header {
   padding: 8px;
   position: fixed;
   z-index: 44444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -180,6 +186,7 @@ header .header {
   background: var(--fundo-component);
   padding: 8px;
   border-radius: 8px;
+  width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
