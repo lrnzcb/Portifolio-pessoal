@@ -8,12 +8,12 @@
 }
 .btn-principal{
     @extend .btn;
-    color :$texto-principal;
-    background: $cor-primaria;
+    color :var(--texto-principal);
+    background: var(--cor-primaria);
     transition: all 0.5s;
     &:hover{
         transition: all 0.5; transform:translateY(-3px) scale(1.05) rotate(2deg);
-        color: $texto-desable;
+        color: var(--text-desable);
         background: red;
        }
 }

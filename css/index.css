@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background: #121212;
+  --cor-primaria: #8a3dff;
+  --texto-principal: #f5f5f5;
+  --texto-secundario: #b0b0b0;
+  --texto-desable: #808080;
+  --fundo-component: #333333;
+  --border: #444444;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode {
+  --background: #ffffff;
+  --cor-primaria: #6a2bcc;
+  --texto-principal: #0a0a0a;
+  --texto-secundario: #4a4a4a;
+  --texto-desable: #c0c0c0;
+  --fundo-component: #eaeaea;
+  --border: #dddddd;
+  --box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+/*
+// Exemplo de uso
+
+a {
+  color: var(--cor-primaria);
+}
+
+.component {
+  background-color: var(--fundo-component);
+  border: 1px solid var(--border);
+  box-shadow: 0px 4px 6px var(--box-shadow);
+  color: var(--texto-secundario);
+}*/
 .btn, .btn-principal {
   padding: 5px;
   font-size: 10px;
@@ -7,8 +42,8 @@
 }
 
 .btn-principal {
-  color: #f5f5f5;
-  background: #8a3dff;
+  color: var(--texto-principal);
+  background: var(--cor-primaria);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -18,17 +53,17 @@
   transition: all 0.5;
   -webkit-transform: translateY(-3px) scale(1.05) rotate(2deg);
           transform: translateY(-3px) scale(1.05) rotate(2deg);
-  color: #808080;
+  color: var(--text-desable);
   background: red;
 }
 
 .card {
-  background: #333333;
+  background: var(--fundo-component);
   border-radius: 5px;
 }
 
 .card-line {
-  border: solid 1px #444444;
+  border: solid 1px var(--border);
   border-radius: 5px;
   padding: 8px;
 }
@@ -39,13 +74,15 @@ body {
   font-family: "Poppins", serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #f5f5f5;
-  background: #121212;
+  background: var(--background);
+  color: var(--texto-principal);
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100vh;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 h2 {
@@ -80,7 +117,10 @@ header {
 }
 
 header .header {
-  background: #333333;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: var(--fundo-component);
   padding: 8px;
   border-radius: 8px;
   display: -webkit-box;
@@ -97,17 +137,36 @@ header nav {
   display: none;
 }
 
+.mood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mood button {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: var(--texto-principal);
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.escuro {
+  display: none;
+}
+
 .img_profile img {
   margin-bottom: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 150px;
   border-radius: 50%;
-  border: solid 3px #8a3dff;
+  border: solid 3px var(--cor-primaria);
 }
 
 .above {
-  background: #1e1e1e;
+  background: var(--fundo-component);
   border-radius: 10px;
   margin: 10px;
   display: -webkit-box;
@@ -172,13 +231,13 @@ header nav {
 }
 
 .social_midea li a {
-  color: #f5f5f5;
+  color: var(--texto-principal);
   margin-right: 8px;
   font-size: 16px;
 }
 
 .social_midea li a:hover {
-  color: #b0b0b0;
+  color: var(--texto-secundario);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: translateY(-3px) scale(1.05) rotate(2deg);
@@ -262,7 +321,7 @@ header nav {
 
 .progress {
   width: 90%;
-  background: #b0b0b0;
+  background: var(--texto-secundario);
   height: 5px;
   border-radius: 3px;
 }
@@ -270,49 +329,49 @@ header nav {
 .progress .per {
   width: 99%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per2 {
   width: 80%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per3 {
   width: 85%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per4 {
   width: 50%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per5 {
   width: 85%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per6 {
   width: 90%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
 .progress .per7 {
   width: 98%;
   height: 100%;
-  background: #8a3dff;
+  background: var(--cor-primaria);
   border-radius: 3px;
 }
 
@@ -362,7 +421,7 @@ header nav {
 }
 
 .footer_project span {
-  background: #808080;
+  background: var(--texto-desable);
   font-size: 10px;
   margin-right: 8px;
   padding: 5px 8px;
@@ -370,16 +429,16 @@ header nav {
 }
 
 .text_card_project a {
-  background: #8a3dff;
-  color: #f5f5f5;
+  background: var(--cor-primaria);
+  color: var(--texto-principal);
   padding: 7px 8px;
   margin-left: 5px;
 }
 
 .contact a {
   padding: 8px;
-  background: #8a3dff;
-  color: #f5f5f5;
+  background: var(--cor-primaria);
+  color: var(--texto-principal);
   font-size: 16px;
   text-decoration: none;
   border-radius: 5px;
@@ -388,17 +447,17 @@ header nav {
 
 .contact small {
   margin-top: 10px;
-  color: #b0b0b0;
+  color: var(--texto-secundario);
   font-size: small;
 }
 
 footer {
   margin-top: 10px;
-  border-top: solid 1px #808080;
+  border-top: solid 1px var(--texto-desable);
 }
 
 footer small {
-  color: #808080;
+  color: var(--texto-desable);
   margin-top: 10px;
   font-size: 10px;
 }

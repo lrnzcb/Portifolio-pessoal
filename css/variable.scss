@@ -1,10 +1,59 @@
  //cofiguracao das cores
- $background:#121212;
- $cor-primaria:#8a3dff;
- $texto-principal: #f5f5f5;
- $texto-secundario:#b0b0b0;
- $texto-desable: #808080;
- $fundo-componet: #333333;
- $border:#444444;
- $box-chadow: rgba(0,0,0,0.1)
+
+  // Variáveis SCSS (Modo Escuro)
+$background-dark: #121212;
+$cor-primaria-dark: #8a3dff;
+$texto-principal-dark: #f5f5f5;
+$texto-secundario-dark: #b0b0b0;
+$texto-desable-dark: #808080;
+$fundo-component-dark: #333333;
+$border-dark: #444444;
+$box-shadow-dark: rgba(0, 0, 0, 0.1);
+
+// Variáveis SCSS (Modo Claro)
+$background-light: #ffffff;
+$cor-primaria-light: #6a2bcc;
+$texto-principal-light: #0a0a0a;
+$texto-secundario-light: #4a4a4a;
+$texto-desable-light: #c0c0c0;
+$fundo-component-light: #eaeaea;
+$border-light: #dddddd;
+$box-shadow-light: rgba(0, 0, 0, 0.05);
+
+// Definir as variáveis CSS no :root (Modo Escuro como padrão)
+:root {
+  --background: #{$background-dark};
+  --cor-primaria: #{$cor-primaria-dark};
+  --texto-principal: #{$texto-principal-dark};
+  --texto-secundario: #{$texto-secundario-dark};
+  --texto-desable: #{$texto-desable-dark};
+  --fundo-component: #{$fundo-component-dark};
+  --border: #{$border-dark};
+  --box-shadow: #{$box-shadow-dark};
+}
+
+// Sobrescrever para o modo claro
+.light-mode {
+  --background: #{$background-light};
+  --cor-primaria: #{$cor-primaria-light};
+  --texto-principal: #{$texto-principal-light};
+  --texto-secundario: #{$texto-secundario-light};
+  --texto-desable: #{$texto-desable-light};
+  --fundo-component: #{$fundo-component-light};
+  --border: #{$border-light};
+  --box-shadow: #{$box-shadow-light};
+}
+/*
+// Exemplo de uso
+
+a {
+  color: var(--cor-primaria);
+}
+
+.component {
+  background-color: var(--fundo-component);
+  border: 1px solid var(--border);
+  box-shadow: 0px 4px 6px var(--box-shadow);
+  color: var(--texto-secundario);
+}*/
 

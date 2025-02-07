@@ -4,4 +4,20 @@
   text-decoration: none;
   border-radius: 3px;
 }
+
+.btn-principal {
+  color: var(--texto-principal);
+  background: var(--cor-primaria);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-principal:hover {
+  -webkit-transition: all 0.5;
+  transition: all 0.5;
+  -webkit-transform: translateY(-3px) scale(1.05) rotate(2deg);
+          transform: translateY(-3px) scale(1.05) rotate(2deg);
+  color: var(--text-desable);
+  background: red;
+}
 /*# sourceMappingURL=btn.css.map */

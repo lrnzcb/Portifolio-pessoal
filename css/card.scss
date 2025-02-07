@@ -1,6 +1,6 @@
 .card {
-    background: $fundo-componet; border-radius: 5px; 
+    background: var(--fundo-component); border-radius: 5px; 
 }
 .card-line{
-    border:solid 1px $border; border-radius: 5px; padding: 8px;
+    border:solid 1px var(--border); border-radius: 5px; padding: 8px;
 }

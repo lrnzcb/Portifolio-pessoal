@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=variable.css.map */
+:root {
+  --background: #121212;
+  --cor-primaria: #8a3dff;
+  --texto-principal: #f5f5f5;
+  --texto-secundario: #b0b0b0;
+  --texto-desable: #808080;
+  --fundo-component: #333333;
+  --border: #444444;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode {
+  --background: #ffffff;
+  --cor-primaria: #6a2bcc;
+  --texto-principal: #0a0a0a;
+  --texto-secundario: #4a4a4a;
+  --texto-desable: #c0c0c0;
+  --fundo-component: #eaeaea;
+  --border: #dddddd;
+  --box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+/*
+// Exemplo de uso
+
+a {
+  color: var(--cor-primaria);
+}
+
+.component {
+  background-color: var(--fundo-component);
+  border: 1px solid var(--border);
+  box-shadow: 0px 4px 6px var(--box-shadow);
+  color: var(--texto-secundario);
+}*/
+/*# sourceMappingURL=variable.css.map */
