@@ -1,0 +1,1 @@
+Ce répertoire contient des projets front-end réalisés avec des technologies modernes telles que HTML, CSS, SCSS, React et Next.js. L'objectif est de créer des interfaces utilisateur réactives et performantes, offrant une expérience fluide et intuitive sur toutes les plateformes.
